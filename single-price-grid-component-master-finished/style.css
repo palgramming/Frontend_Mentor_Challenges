@@ -88,7 +88,9 @@ button {
     border-radius: 5px;
     margin: 1rem;
     box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.31);
-    
+}
+button:hover {
+    background-color: hsl(71, 73%, 44%)
 }
 footer {
     text-align: center;
