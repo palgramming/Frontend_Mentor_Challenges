@@ -1,0 +1,117 @@
+body {
+    box-sizing: border-box;
+    margin: 5rem 0 0 0;
+    border: 0;
+background-color: hsl(206, 47%, 93%);
+font-family: 'Karla', sans-serif;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+header {
+    background-color: #fff; 
+    border-radius: 15px 15px 0 0 ;
+    box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.31);
+    padding: 1.5rem 0 2.5rem 2.5rem;
+}
+
+header h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+header h2 {
+color: hsl(71, 73%, 54%);
+font-size: 1.25rem;
+
+}
+header h3 {
+color: hsl(220, 11%, 69%);
+font-weight: 400;
+margin:0;
+padding-right: 4rem;
+font-size: 1rem;
+}
+
+article {
+    display: flex;
+
+}
+
+section h2 {
+    font-size: 1.25rem;
+    color: #fff;
+}
+section h3 {
+font-size: 2rem;
+margin: 0;
+color: #fff;
+}
+section h3 span {
+    color: #fff;
+    font-weight: 400;
+    opacity: 70%;
+    font-size: 1rem;
+}
+
+section h5 {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 80%;
+}
+section p {
+    color: white;
+    font-size: 1rem;
+    opacity: 70%;
+}
+#left {
+    background-color: hsl(179, 61%, 44%);
+    width: 50%;
+    border-bottom-left-radius: 15px;
+    padding: 2rem 0 1rem 2.5rem;
+}
+#right {
+    background-color:  hsl(179, 47%, 52%);
+    width: 50%;
+    border-bottom-right-radius: 15px;
+    padding: 2rem 0 1rem 2.5rem;
+    line-height: 1.5rem;
+}
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: #fff;
+    padding: 1rem 6rem;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.31);
+    
+}
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    article {
+        flex-direction: column;
+    }
+    #left {
+        border-bottom-left-radius: 0px;
+        width: 80%;
+    }
+    #right {
+        width: 80%;
+        border-bottom-left-radius: 15px;
+    }
+    header {
+        width:80%;
+    }
+    button {
+        padding: 1rem 3rem;
+    }
+} 
