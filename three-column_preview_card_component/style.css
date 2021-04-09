@@ -1,0 +1,110 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+main {
+ max-width: 327px;
+ margin: 0 auto;
+ 
+}
+
+.title {
+    font-family: 'Big Shoulders Display', 
+    cursive;
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    margin-top: 33px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+.summary {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 25px;
+}
+button{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card {
+    height: 442px;
+    padding-left: 48px;
+}
+
+.color1 {
+    background-color: #e28625;
+    border-radius: 8px 8px 0 0;
+}
+.color2 {
+    background-color: #006971;
+}
+.color3 {
+    background-color: #004140;
+    border-radius: 0 0 8px 8px ;
+}
+.color1 button {
+    color: #e28625;
+}
+.color2 button {
+    color: #006971;
+}
+.color3 button {
+    color: #004140;
+}
+button {
+    border: 1px solid #979797;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    width: 146px;
+    height: 48px;
+    
+}
+
+button:hover {
+        background-color: rgba(0,0,0,0);
+        border: 2px solid hsl(0, 0%, 95%);
+}
+
+.color1 button:hover,
+.color2 button:hover,
+.color3 button:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+img {
+    width: 64px;
+    height: 40px;
+    margin-top: 48px; 
+}
+
+@media screen and  (min-width: 920px) {
+    main {
+        height: 100vh;
+        display:flex;
+        max-width: 921px;
+        align-items: center;
+    }
+    
+    .color1 {
+        border-radius: 8px 0 0 8px;
+    }
+    .color3 {
+        border-radius: 0 8px 8px 0 ;
+    }
+    .card {
+        height: 500px;
+    }
+    .summary {
+        margin-bottom: 85px;
+    }
+    
+}
