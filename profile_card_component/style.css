@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  --dk-teal: #19a1ae;
+  --lt-teal: #41cbd3;
+  --lt-gry: #6b7082;
+  --blackish: #2e3349;
+  --whiteish: #fff;
+}
+
+/* Layout */
+
+main {
+  width: 350px;
+  height: 374px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--dk-teal);
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 51vw bottom 40vh, left 49vw top 52vh;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.top {
+  width: 100%;
+  height: 140px;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  background-image: url("images/bg-pattern-card.svg");
+  background-size: 75%;
+}
+
+.bottom {
+  width: 100%;
+  height: 234px;
+  border-radius: 0 0 15px 15px;
+  background-color: var(--whiteish);
+  text-align: center;
+}
+
+#social {
+  display: flex;
+  justify-content: space-around;
+}
+
+#circle-container {
+  position: absolute;
+  top: 87px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#circle {
+  width: 106px;
+  height: 106px;
+  border-radius: 100%;
+  background-color: var(--whiteish);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #e8e9ec;
+  margin: 25px 0 28px 0;
+}
+
+.name-age-container {
+  display: flex;
+  padding-top: 75px;
+  margin-bottom: 11px;
+  justify-content: center;
+}
+/*   Text   */
+
+.name {
+  font-size: 18px;
+  color: var(--blackish);
+  font-weight: 700;
+}
+
+.age {
+  font-size: 18px;
+  color: var(--lt-gry);
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.city {
+  font-size: 14px;
+  color: var(--lt-gry);
+  font-weight: 400;
+}
+
+.counts {
+  font-size: 18px;
+  color: var(--blackish);
+  font-weight: 700;
+}
+
+.types {
+  font-size: 10px;
+  color: var(--lt-gry);
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 326px;
+    max-width: 326px;
+  }
+  body {
+    background-position: right 40vw bottom 40vh, left 40vw top 40vh;
+  }
+}
