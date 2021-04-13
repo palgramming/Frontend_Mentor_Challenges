@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  --redish: #ea5454;
+  --tealish: #44d3d2;
+  --orangish: #fcae4a;
+  --blueish: #549ef2;
+  --grayish: #4d4f62;
+  --whiteish: #ffffff;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 75px;
+}
+h1 {
+  font-size: 24px;
+  color: var(--grayish);
+  letter-spacing: 0.17px;
+  font-weight: 200;
+  margin: 85px 0 15px 0;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 15px;
+  color: var(--grayish);
+  opacity: 50%;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 311px;
+  height: 222px;
+  background-color: var(--whiteish);
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.card-title {
+  font-size: 20px;
+  color: var(--grayish);
+  font-weight: 600;
+  padding: 23px 0 0 20px;
+}
+
+.card-quote {
+  font-size: 13px;
+  color: var(--grayish);
+  font-weight: 400;
+  opacity: 50%;
+  letter-spacing: 0.09px;
+  line-height: 23px;
+  padding: 4px 0 0 20px;
+}
+
+.card-img {
+  width: 57px;
+  height: 57px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#super {
+  border-top: 4px solid var(--tealish);
+}
+
+#team {
+  border-top: 4px solid var(--redish);
+}
+
+#karma {
+  border-top: 4px solid var(--orangish);
+}
+
+#calculator {
+  border-top: 4px solid var(--blueish);
+}
+
+@media screen and (min-width: 550px) {
+  .tagline {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    margin-top: 100px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .card {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 18px;
+  }
+
+  .tagline {
+    font-size: 15px;
+  }
+  header {
+    margin-bottom: 63px;
+  }
+}
+
+@media screen and (min-width: 1175px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "aa bb cc "
+      "aa dd cc";
+    gap: 30px;
+  }
+  #super {
+    grid-area: aa;
+    align-self: center;
+  }
+  #karma {
+    grid-area: dd;
+  }
+
+  #team {
+    grid-area: bb;
+  }
+  #calculator {
+    grid-area: cc;
+    align-self: center;
+  }
+}
