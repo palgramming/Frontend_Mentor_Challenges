@@ -26,8 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../images/bg-pattern-top.svg"),
-    url("../images/bg-pattern-bottom.svg");
+  background-image: url("bg-pattern-top.svg"),
+    url("bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: right 51vw bottom 40vh, left 49vw top 52vh;
 }
@@ -41,7 +41,7 @@ footer {
   height: 140px;
   border-radius: 15px 15px 0 0;
   position: relative;
-  background-image: url("images/bg-pattern-card.svg");
+  background-image: url("bg-pattern-card.svg");
   background-size: 75%;
 }
 
