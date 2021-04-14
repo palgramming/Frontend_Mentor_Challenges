@@ -47,6 +47,9 @@ main {
   font-family: var(--lexend-deca);
   color: var(--white);
   margin-top: 25px;
+  opacity: 75%;
+  max-width: 231px;
+  
 }
 
 #sedans {
