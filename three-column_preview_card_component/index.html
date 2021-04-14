@@ -4,30 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | 3-column preview card component</title>
-
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 50px;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -36,32 +28,32 @@
   </head>
   <body>
     <main>
-      <div class="card color1">
-        <img src="images/icon-sedans.svg" alt="sedans" />
-        <p class="title">Sedans</p>
-        <p class="summary">
+      <div id="sedans" class="card">
+        <img src="icon-sedans.svg" alt="Sedans Icon" class="card-img" />
+        <p class="card-title">Sedans</p>
+        <p class="card-text">
           Choose a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip.
         </p>
-        <button>Learn More</button>
+        <button class="sedans">Learn More</button>
       </div>
-      <div class="card color2">
-        <img src="images/icon-suvs.svg" alt="suvs" />
-        <p class="title">SUVs</p>
-        <p class="summary">
+      <div id="suvs" class="card">
+        <img src="icon-suvs.svg" alt="SUVS Icon" class="card-img" />
+        <p class="card-title">SUVS</p>
+        <p class="card-text">
           Take an SUV for its spacious interior, power, and versatility. Perfect
           for your next family vacation and off-road adventures.
         </p>
-        <button>Learn More</button>
+        <button class="suvs">Learn More</button>
       </div>
-      <div class="card color3">
-        <img src="images/icon-luxury.svg" alt="Luxury" />
-        <p class="title">Luxury</p>
-        <p class="summary">
+      <div id="luxury" class="card">
+        <img src="icon-luxury.svg" alt="Luxury Icon" class="card-img" />
+        <p class="card-title">Luxury</p>
+        <p class="card-text">
           Cruise in the best car brands without the bloated prices. Enjoy the
           enhanced comfort of a luxury rental and arrive in style.
         </p>
-        <button>Learn More</button>
+        <button class="luxury">Learn More</button>
       </div>
     </main>
 
@@ -69,7 +61,12 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Palgramming</a>.
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/palgramming"
+        target="_blank"
+        >Palgramming</a
+      >.
     </div>
   </body>
 </html>
