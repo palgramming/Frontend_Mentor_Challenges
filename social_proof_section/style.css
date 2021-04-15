@@ -1,0 +1,247 @@
+:root {
+  --dk-purplish: #512051;
+  --md-purplish: #927b91;
+  --pinkish: #ee69a4;
+  --lt-purplish: #f7f2f7;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-image: url("bg-pattern-top-mobile.svg"),
+    url("bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+header,
+#star-block-holder,
+#card-holder {
+  width: 327px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dk-purplish);
+  line-height: 32px;
+  letter-spacing: -1.14px;
+  text-align: center;
+  margin-top: 85px;
+}
+h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--md-purplish);
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  width: 327;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.stars-block {
+  width: 327px;
+  height: 78px;
+  border-radius: 8px;
+  background-color: var(--lt-purplish);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.stars-block:last-of-type {
+  margin-bottom: 50px;
+}
+.star {
+  width: 16.55px;
+  height: 15.77px;
+  fill: #ef9546;
+  margin-left: 6px;
+}
+.star:first-of-type {
+  margin-left: 0;
+}
+
+.star-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dk-purplish);
+  margin-top: 10px;
+}
+
+.card {
+  width: 327px;
+  height: 248px;
+  background-color: var(--dk-purplish);
+  border-radius: 8px;
+  padding: 40px 0 0 32px;
+  margin-bottom: 15px;
+}
+
+.card-user {
+  display: flex;
+  align-items: center;
+}
+
+.card-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.name-pos {
+  margin-left: 21px;
+}
+
+.card-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card-position {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--pinkish);
+}
+
+.card-quote {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 22px;
+  letter-spacing: -0.23px;
+  width: 263px;
+  margin-top: 28px;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("bg-pattern-top-desktop.svg"),
+      url("bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+  }
+
+  header,
+  #star-block-holder,
+  #card-holder {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 350px;
+    height: 234px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top-container {
+    display: unset;
+  }
+}
+@media screen and (min-width: 901px) {
+  .top-container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .top-container {
+    margin-top: 75px;
+  }
+
+  h1 {
+    margin-top: 40px;
+  }
+  #card-holder {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .card:nth-of-type(1) {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+  .card:nth-of-type(3) {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-container {
+    display: flex;
+    width: 1200px;
+    margin: 100px auto 20px auto;
+  }
+  header {
+    width: 450px;
+  }
+  #star-block-holder {
+    width: unset;
+  }
+  .stars-block {
+    width: 445px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: unset20px;
+    justify-content: left;
+    padding-left: 30px;
+  }
+  .stars-block:nth-of-type(2) {
+    margin-left: 40px;
+  }
+
+  .stars-block:nth-of-type(3) {
+    margin-left: 80px;
+  }
+
+  .star-text {
+    margin-top: unset;
+    padding-left: 30px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.71px;
+    text-align: left;
+    margin-top: unset;
+  }
+
+  h2 {
+    text-align: left;
+  }
+  #card-holder {
+    display: flex;
+    flex-direction: row;
+    height: unset;
+    width: unset;
+    justify-content: center;
+  }
+  .card:nth-of-type(2) {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .card:nth-of-type(3) {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .card-quote {
+    width: 285px;
+  }
+}
