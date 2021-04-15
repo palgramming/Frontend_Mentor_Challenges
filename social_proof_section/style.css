@@ -131,6 +131,7 @@ h2 {
       url("bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
+    height: 100vh;
   }
 
   header,
