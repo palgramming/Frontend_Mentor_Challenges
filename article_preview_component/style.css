@@ -99,6 +99,7 @@ button {
 
 button:hover {
   background-color: var(--Desaturated-Dark-Blue);
+  cursor: pointer;
 }
 .normal-back {
   background-color: var(--Grayish-Blue);
