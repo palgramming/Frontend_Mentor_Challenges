@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
 
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: blueviolet;
+      }
+      .attribution a {
+        color: hsl(228, 10%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="left">
+        <img src="./logo.svg" alt="Fylo Logo" class="logo" />
+        <div id="boxes">
+          <div class="box">
+            <img src="./icon-document.svg" alt="Documents" />
+          </div>
+          <div class="box">
+            <img src="./icon-folder.svg" alt="Folders" />
+          </div>
+          <div class="box">
+            <img src="./icon-upload.svg" alt="Uploads" />
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <p class="sentence">You’ve used <span>815 GB</span> of your storage</p>
+        <div class="bar">
+          <div class="graph"><div class="dot"></div></div>
+        </div>
+        <div class="gigs">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <div class="gb-left">
+          <p id="one-eighty-five">185</p>
+          <p id="gbleft">gb left</p>
+          <div id="triangle"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/palgramming"
+        target="_blank"
+        >Palgramming</a
+      >.
+    </div>
+  </body>
+</html>
