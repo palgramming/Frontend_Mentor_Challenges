@@ -319,22 +319,29 @@ h2 {
   justify-content: center;
   margin-right: 8px;
 }
-#purple-circle #arrow {
+ #barrow {
   width: 2px;
   height: 7px;
+  margin: 0px;
+  position: relative;
 }
 
-#purple-circle #arrow-top {
+
+ #barrow-top {
+    position: absolute;
+    background-color: var(--white);
   width: 3px;
   height: 7px;
-  top: 2px;
+  top: 1px;
   transform: rotate(40deg);
   border-radius: 2px;
 }
-#purple-circle #arrow-bottom {
+ #barrow-bottom {
+    position: absolute;
+    background-color: var(--white);
   width: 3px;
   height: 7px;
-  top: -1px;
+  top: -3px;
   transform: rotate(-40deg);
   border-radius: 2px;
 }
