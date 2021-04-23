@@ -37,7 +37,7 @@ body {
   height: 1018px;
   border-radius: 255px;
   background-image: linear-gradient(45deg, #8739ff, #e844ff);
-  opacity: 0.03;
+  opacity: 0.015;
   position: absolute;
   top: 509px;
   right: -255px;
@@ -361,7 +361,7 @@ h2 {
     left: -75px;
   }
   #right-back {
-    top: 75px;
+    top: 175px;
     right: -185px;
   }
   #text-content {
