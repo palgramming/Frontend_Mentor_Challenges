@@ -55,11 +55,13 @@ h1 {
   color: var(--purplish);
   margin-top: 65px;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-top: 130px;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -362,7 +364,6 @@ h2 {
     align-items: center;
     width: 940px;
     margin: 85px auto 0 auto;
-    border: 1px solid slateblue;
   }
   #phone {
     margin-left: 120px;
