@@ -17,8 +17,7 @@ body {
   background-color: var(--off-whiteish);
   background-image: url(./bg-top.svg);
   background-repeat: no-repeat;
-  background-position-x: right -200px;
-  background-position-y: top -30px;
+  background-position: right -200px top -30px;
   height: 100vh;
 }
 
