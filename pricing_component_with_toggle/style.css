@@ -113,6 +113,11 @@ button {
   margin-top: 32px;
 }
 
+button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
 /* Header Start*/
 header {
   margin: 65px auto 0 auto;
@@ -165,6 +170,7 @@ h1 {
   border-radius: 100%;
   background-color: var(--white);
   margin: 0 5px;
+  cursor: pointer;
 }
 
 /* End Header*/
@@ -206,6 +212,5 @@ h1 {
   .fancy > .plan {
     margin-top: 62px;
   }
-  .slider {
-  }
 }
+
