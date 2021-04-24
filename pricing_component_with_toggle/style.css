@@ -169,7 +169,7 @@ h1 {
 
 /* End Header*/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
   body {
     background-color: var(--off-whiteish);
     background-position-x: unset;
