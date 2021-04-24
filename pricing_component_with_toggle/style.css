@@ -158,11 +158,12 @@ h1 {
 }
 
 .switch-off {
-  justify-content: left;
+  justify-content: flex-start;
 }
 .switch-on {
-  justify-content: right;
+  justify-content: flex-end;
 }
+
 
 .dot {
   width: 24px;
