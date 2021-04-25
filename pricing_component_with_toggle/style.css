@@ -81,6 +81,8 @@ main {
   font-weight: 700;
   color: var(--drk-grayish);
   margin-top: 17px;
+  display: flex;
+align-items: center;
 }
 
 .dollar {
