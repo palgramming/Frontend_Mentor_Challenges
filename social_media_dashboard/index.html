@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon-small"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-small-32x32.png"
+    />
 
+    <title>Frontend Mentor | Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 100px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="big-header">
+        <div class="head">
+          <p class="head-title">Social Media Dashboard</p>
+          <p class="head-total">Total Followers: 23,004</p>
+        </div>
+        <div id="mode-selector">
+          <p id="mode-selected" class="mode-text-lt">Dark Mode</p>
+          <button id="mode" class="right">
+            <div id="circle" class="circle-lt"></div>
+          </button>
+        </div>
+      </div>
+      <div id="big-container">
+        <div class="big card lt">
+          <div class="top-board top-dkblu"></div>
+          <div class="big-div">
+            <img src="./icon-facebook.svg" alt="Facebook" class="icon-big" />
+            <p class="at-big">@nathanf</p>
+          </div>
+          <p class="count-big">1987</p>
+          <p class="type-big">Followers</p>
+          <div>
+            <img src="./icon-up.svg" alt="" class="updown-big" />
+            <p class="today-big up">12 Today</p>
+          </div>
+        </div>
+        <div class="big card lt">
+          <div class="top-board top-ltblu"></div>
+          <div class="big-div">
+            <img src="./icon-twitter.svg" alt="Twitter" class="icon-big" />
+            <p class="at-big">@nathanf</p>
+          </div>
+          <p class="count-big">1044</p>
+          <p class="type-big">Followers</p>
+          <div>
+            <img src="./icon-up.svg" alt="" class="updown-big" />
+            <p class="today-big up">99 Today</p>
+          </div>
+        </div>
+
+        <div class="big card lt">
+          <div class="top-board top-grd"></div>
+          <div class="big-div">
+            <img src="./icon-instagram.svg" alt="Instagram" class="icon-big" />
+            <p class="at-big">@realnathanf</p>
+          </div>
+
+          <p class="count-big">11k</p>
+          <p class="type-big">Followers</p>
+          <div>
+            <img src="./icon-up.svg" alt="" class="updown-big" />
+            <p class="today-big up">1099 Today</p>
+          </div>
+        </div>
+        <div class="big card lt">
+          <div class="top-board top-red"></div>
+          <div class="big-div">
+            <img src="./icon-youtube.svg" alt="YouTube" class="icon-big" />
+            <p class="at-big">Nathan F.</p>
+          </div>
+          <p class="count-big">8239</p>
+          <p class="type-big">Subscribers</p>
+          <div>
+            <img src="./icon-down.svg" alt="" class="updown-big" />
+            <p class="today-big down">144 Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-header">Overview - Today</div>
+      <div id="small-container">
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Page views</p>
+            <img src="./icon-facebook.svg" alt="Facebook" class="icon-small" />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">87</div>
+            <div class="change-small up">
+              <img src="./icon-up.svg" alt="" class="updown-small" />
+              <p>3%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Likes</p>
+            <img src="./icon-facebook.svg" alt="Facebook" class="icon-small" />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">52</div>
+            <div class="change-small down">
+              <img src="./icon-down.svg" alt="" class="updown-small" />
+              <p>2%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Likes</p>
+            <img
+              src="./icon-instagram.svg"
+              alt="Instagram"
+              class="icon-small"
+            />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">5462</div>
+            <div class="change-small up">
+              <img src="./icon-up.svg" alt="" class="updown-small" />
+              <p>2257%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Profile views-small</p>
+            <img
+              src="./icon-instagram.svg"
+              alt="Instagram"
+              class="icon-small"
+            />
+          </div>
+          <div class="bottom-small up">
+            <div class="count-small">52k</div>
+            <div class="change-small">
+              <img src="./icon-up.svg" alt="" class="updown-small" />
+              <p>1375%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Retweets</p>
+            <img src="./icon-twitter.svg" alt="Twitter" class="icon-small" />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">117</div>
+            <div class="change-small up">
+              <img src="./icon-up.svg" alt="" class="updown-small" />
+              <p>303%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Likes</p>
+            <img src="./icon-twitter.svg" alt="Twitter" class="icon-small" />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">507</div>
+            <div class="change-small up">
+              <img src="./icon-up.svg" alt="" class="updown-small" />
+              <p>553%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Likes</p>
+            <img src="./icon-youtube.svg" alt="YouTube" class="icon-small" />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">107</div>
+            <div class="change-small down">
+              <img src="./icon-down.svg" alt="" class="updown-small" />
+              <p>19%</p>
+            </div>
+          </div>
+        </div>
+        <div class="small card lt">
+          <div class="top-small">
+            <p class="views-small">Total views</p>
+            <img src="./icon-youtube.svg" alt="YouTube" class="icon-small" />
+          </div>
+          <div class="bottom-small">
+            <div class="count-small">1407</div>
+            <div class="change-small down">
+              <img src="./icon-down.svg" alt="" class="updown-small" />
+              <p>12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/palgramming">Palgramming</a
+      >.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
