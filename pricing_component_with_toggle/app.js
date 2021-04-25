@@ -1,5 +1,5 @@
 const timeLength = document.getElementById("switch");
-const price = document.querySelectorAll(".price > span")
+const price = document.querySelectorAll(".price > p > span")
 
 timeLength.addEventListener("click", () => {
    console.log(price)
