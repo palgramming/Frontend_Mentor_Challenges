@@ -168,7 +168,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1099px) {
+@media screen and (min-width: 1265px) {
   #mobile-hero {
     display: none;
   }
