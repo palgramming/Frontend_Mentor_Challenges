@@ -126,6 +126,7 @@ h1 {
 }
 .download-main:hover {
   background-color: var(--lt-tealish);
+  cursor: pointer;
 }
 
 .quest-main {
@@ -140,6 +141,7 @@ h1 {
 }
 .quest-main:hover {
   background-color: var(--pale-purple);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 625px) {
