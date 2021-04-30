@@ -1,0 +1,360 @@
+:root {
+  --greenish: #54e6af;
+  --lt-blueish: #5a668a;
+  --md-blueish: #2c344b;
+  --dk-blueish: #121725;
+  --greyish: #c2cbe5;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: var(--dk-blueish);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 327px;
+  position: relative;
+}
+#main-back img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+#pod-logo {
+  width: 96px;
+  height: 40px;
+  margin: 65px 0 70px 0;
+}
+#pod-logo img {
+  width: 96px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 26px;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 span {
+  color: var(--greenish);
+}
+
+h2 {
+  font-size: 15px;
+  color: var(--greyish);
+  font-weight: 300;
+  line-height: 25px;
+  margin-top: 15px;
+  width: 327px;
+  text-align: center;
+}
+
+#pod-links {
+  width: 315px;
+  height: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px 0 48px 0;
+}
+#spot {
+  width: 56px;
+  height: 17px;
+}
+
+#apple {
+  width: 46px;
+  height: 17px;
+}
+#google {
+  width: 73px;
+  height: 11px;
+}
+#pocket {
+  width: 77px;
+  height: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+}
+#email {
+  position: unset;
+}
+#submit {
+  position: unset;
+}
+
+#submit:hover {
+  background-color: #b3ffe2;
+}
+
+#email {
+  width: 327px;
+  height: 46px;
+  background-color: var(--md-blueish);
+  border-radius: 28px;
+  border: none;
+  padding-left: 25px;
+  color: var(--white);
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#submit {
+  width: 327px;
+  height: 46px;
+  background-color: var(--greenish);
+  border-radius: 28px;
+  border: none;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dk-blueish);
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#desk-dots,
+#desk-back,
+#tab-back,
+#mo-dots {
+  display: none;
+}
+
+#error {
+  position: absolute;
+  font-size: 12;
+  font-weight: 700;
+  color: #fb3e3e;
+  top: -30px;
+  left: 50px;
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #mo-back {
+    display: none;
+  }
+
+  #tab-back {
+    display: unset;
+  }
+
+  #pod-logo {
+    width: 135px;
+    height: 56px;
+    margin: 50px 0 150px 50px;
+  }
+
+  #pod-logo img {
+    width: 135px;
+    height: 56px;
+  }
+
+  main {
+    width: 768px;
+    margin: 0 auto 0 auto;
+  }
+
+  #main-back img {
+    position: absolute;
+    width: 491px;
+    top: 0px;
+    left: 277px;
+    z-index: -1;
+    opacity: 0.8;
+    background-blend-mode: multiply;
+    background-color: var(--greenish);
+  }
+
+  #text-container {
+    display: grid;
+    grid-template-areas:
+      "h1"
+      "h2"
+      "form"
+      "podlinks"
+      "modots";
+    background-color: var(--dk-blueish);
+    width: 635px;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+
+  #mo-dots {
+    grid-area: "modots";
+    display: unset;
+    margin-top: 108px;
+  }
+
+  form {
+    display: unset;
+    grid-area: form;
+    position: relative;
+    margin-top: 40px;
+  }
+  #email {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 427px;
+    height: 56px;
+    margin: unset;
+  }
+
+  #submit {
+    position: absolute;
+    top: 5px;
+    left: 260px;
+    width: 162px;
+    height: 46px;
+    margin: unset;
+  }
+
+  #pod-links {
+    width: 536px;
+    height: 29px;
+    grid-area: podlinks;
+    margin-top: 120px;
+  }
+  #spot {
+    width: 96px;
+    height: 29px;
+  }
+  #apple {
+    width: 78px;
+    height: 29px;
+  }
+  #google {
+    width: 125px;
+    height: 18px;
+  }
+  #pocket {
+    width: 129px;
+    height: 26px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+    grid-area: h1;
+    text-align: left;
+    margin-top: 95px;
+  }
+
+  h1 span {
+    color: var(--greenish);
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 28px;
+    grid-area: h2;
+    text-align: left;
+    width: 450px;
+    margin-top: 30px;
+  }
+
+  main {
+    align-items: flex-start;
+  }
+  #desk-dots,
+  #desk-back {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1289px) {
+  #mo-dots,
+  #tab-back {
+    display: none;
+  }
+  main {
+    width: 1289px;
+    margin: 0 auto 0 auto;
+  }
+
+  #pod-logo {
+    margin: 104px 0 101px 90px;
+  }
+
+  h1 {
+    font-size: 52px;
+    line-height: 62px;
+    margin-top: 90px;
+  }
+
+  h2 {
+    margin-top: 24px;
+  }
+
+  #desk-back {
+    display: unset;
+  }
+
+  #main-back img {
+    position: absolute;
+    width: 888px;
+    height: 640px;
+    top: 130px;
+    left: 475px;
+    z-index: -1;
+    opacity: 0.8;
+    background-blend-mode: multiply;
+    background-color: var(--greenish);
+  }
+  #text-container {
+    width: 723px;
+    align-items: flex-start;
+    margin-left: 90px;
+  }
+
+  #desk-dots {
+    display: unset;
+    position: absolute;
+    bottom: 0px;
+    right: -75px;
+  }
+}

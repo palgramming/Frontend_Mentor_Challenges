@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <main>
+      <div id="main-back">
+        <img id="mo-back" src="./mobile-image-host.jpg" alt="" />
+        <img src="./tablet-image-host.jpg" alt="" id="tab-back" />
+        <img src="./desktop-image-host.jpg" alt="" id="desk-back" />
+      </div>
+      <div id="pod-logo"><img src="./logo.svg" alt="" /></div>
+      <div id="text-container">
+        <h1><span>Publish your podcasts</span><br />everywhere.</h1>
+        <h2>
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </h2>
+        <div id="pod-links">
+          <img src="./spotify.svg" alt="" id="spot" />
+          <img src="./apple-podcast.svg" alt="Apple Podcast Logo" id="apple" />
+          <img
+            src="./google-podcasts.svg"
+            alt="Google Podcast Logo"
+            id="google"
+          />
+          <img src="./pocket-casts.svg" alt="Pocket Casts Logo" id="pocket" />
+        </div>
+        <form id="form" action="">
+          <input type="text" id="email" placeholder="Email address" />
+          <button id="submit" type="submit">Request Access</button>
+          <p id="error" class="none">Opps! Please check your email</p>
+        </form>
+        <img src="./bg-pattern-dots.svg" alt="" id="mo-dots" />
+      </div>
+      <img src="./bg-pattern-dots.svg" alt="" id="desk-dots" />
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
