@@ -1,0 +1,223 @@
+:root {
+  --blackish: #15202a;
+  --grayish: #969696;
+  --blueish: #4c7bf3;
+  --lt-blueish: #c2d3ff;
+  --white: #ffffff;
+  --error: #ff5466;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 85px;
+}
+
+#logo img {
+  width: 56px;
+}
+
+#hero img {
+  width: 320px;
+  height: 192px;
+  margin-top: 70px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--grayish);
+  margin-top: 35px;
+}
+
+h1 span {
+  font-weight: 700;
+  color: var(--blackish);
+}
+
+#tagline p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--blackish);
+  margin-top: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#email {
+  width: 282px;
+  height: 40px;
+  border: 1px solid var(--lt-blueish);
+  border-radius: 28px;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--lt-blueish);
+  padding-left: 30px;
+}
+
+#submit {
+  width: 282px;
+  height: 40px;
+  border: none;
+  border-radius: 28px;
+  background-color: var(--blueish);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--white);
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+  margin-top: 10px;
+}
+
+#submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#copy p {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--grayish);
+  margin-top: 24px;
+}
+
+#social {
+  display: flex;
+  width: 119px;
+  justify-content: space-between;
+  margin-top: 118px;
+}
+
+#facebook svg {
+  fill: var(--blueish);
+  border: 1px solid rgba(76, 123, 243, 0.15);
+  border-radius: 100%;
+  width: 32px;
+  height: 31px;
+  padding: 0px;
+}
+
+#twitter svg {
+  fill: var(--blueish);
+  border: 1px solid rgba(76, 123, 243, 0.15);
+  border-radius: 100%;
+  width: 32px;
+  height: 31px;
+  padding: 7px;
+}
+
+#insta svg {
+  fill: var(--blueish);
+  border: 1px solid rgba(76, 123, 243, 0.15);
+  border-radius: 100%;
+  width: 32px;
+  height: 31px;
+  padding: 6px;
+}
+
+#insta svg:hover,
+#facebook svg:hover,
+#twitter svg:hover {
+  fill: var(--white);
+  border: 1px solid var(--blueish);
+  background-color: var(--blueish);
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+#error {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.12px;
+  color: var(--error);
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    width: 640px;
+  }
+
+  #logo img {
+    width: 89px;
+  }
+
+  #hero img {
+    width: 640px;
+    height: 383px;
+    margin-top: 85px;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-top: 43px;
+  }
+
+  #tagline p {
+    font-size: 20px;
+    margin-top: -13px;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 649px;
+    position: relative;
+  }
+
+  #email {
+    width: 421px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  #submit {
+    width: 200px;
+    height: 56px;
+    font-size: 16px;
+    margin-top: unset;
+  }
+
+  #copy p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #social {
+    margin-top: 75px;
+  }
+  #error {
+    font-size: 12px;
+    text-transform: ;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    letter-spacing: 0.15px;
+  }
+}
