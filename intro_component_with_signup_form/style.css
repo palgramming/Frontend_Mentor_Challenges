@@ -1,0 +1,257 @@
+:root {
+  --pinkish: #ff7979;
+  --greenish: #38cc8b;
+  --ltpurpleish: #bab7d4;
+  --purpleish: #5e54a4;
+  --dkblueish: #3d3b48;
+  --white: #ffffff;
+  --grayish: #dedede;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--pinkish);
+  font-family: "Poppins", sans-serif;
+  background-image: url("bg-intro-mobile.png");
+}
+
+main {
+  width: 327px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.header-para {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--white);
+  margin-top: 25px;
+}
+
+.trial {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.27px;
+  color: var(--white);
+  width: 200px;
+}
+
+.trial span {
+  font-weight: 700;
+}
+
+.trial-block {
+  width: 327px;
+  height: 88px;
+  background-color: var(--purpleish);
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 327px;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  color: var(--dkblueish);
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+input {
+  width: 279px;
+  height: 56px;
+  background-color: var(--white);
+  border: 1px solid var(--grayish);
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dkblueish);
+  letter-spacing: 0.25px;
+}
+
+input:focus {
+  border: 1px solid #5e54a4;
+  outline: none;
+}
+
+.input-error {
+  border: 1px solid #ff7979;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-top: 16px;
+}
+.input-wrapper:nth-child(1) {
+  margin-top: 24px;
+}
+
+#first-error,
+#last-error,
+#email-error,
+#password-error {
+  position: absolute;
+  right: 0px;
+  top: 18px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.error {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+
+#first-error img,
+#last-error img,
+#email-error img,
+#password-error img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+#first-text-error,
+#last-text-error,
+#email-text-error,
+#password-text-error {
+  font-size: 11px;
+  color: var(--pinkish);
+  text-align: right;
+}
+
+button {
+  width: 279px;
+  height: 56px;
+  background-color: var(--greenish);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.09);
+}
+button:hover {
+  cursor: pointer;
+  background-color: #77e2b2;
+}
+
+.terms {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ltpurpleish);
+  line-height: 21px;
+  margin: 11px 0 25px 0;
+  width: 250px;
+}
+.terms:hover {
+  cursor: pointer;
+}
+
+.terms span {
+  color: var(--pinkish);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 599px) {
+  main {
+    width: 540px;
+    margin-top: 65px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+  }
+
+  .trial-block {
+    width: 540px;
+    height: 60px;
+  }
+  .trial {
+    width: unset;
+  }
+
+  form {
+    width: 540px;
+    min-height: 474px;
+  }
+
+  .input-wrapper {
+    position: relative;
+    margin-top: 20px;
+  }
+  .input-wrapper:nth-child(1) {
+    margin-top: 40px;
+  }
+
+  input[type="text"] {
+    width: 460px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    color: var(--dkblueish);
+  }
+
+  button {
+    width: 460px;
+    height: 56px;
+    margin-top: 20px;
+  }
+  .terms {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    display: flex;
+    width: 1165px;
+    align-items: center;
+  }
+  .left {
+    width: 500px;
+    margin-right: 75px;
+    text-align: left;
+  }
+
+  h1 {
+    margin-top: 75px;
+  }
+}
