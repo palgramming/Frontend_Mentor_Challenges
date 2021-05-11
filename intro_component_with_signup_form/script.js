@@ -34,6 +34,8 @@ firstTE.classList.add("error");
     if (!inputs[2].value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
         emailTE.classList.remove("error");
         emailError.classList.remove("error");
+        inputs[2].value = ""
+        inputs[2].placeholder = "email@example/com"
         errorCount +=1
     } else {
         emailTE.classList.add("error");
