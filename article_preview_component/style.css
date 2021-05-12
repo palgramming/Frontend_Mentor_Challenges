@@ -179,7 +179,7 @@ main {
 
 #deskpop-square {
   position: absolute;
-  background-color: 
+  background-color: var(--Very-Dark-Grayish-Blue);
   width: 20px;
   height: 20px;
   bottom: -10px;
