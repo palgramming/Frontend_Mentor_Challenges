@@ -133,7 +133,9 @@ input:focus {
 .flex {
   display: flex;
 }
-
+input:focus::placeholder {
+  opacity: 1;
+}
 #first-error img,
 #last-error img,
 #email-error img,
