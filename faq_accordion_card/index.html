@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: aqua;
+      }
+      .attribution a {
+        color: hsl(69, 71%, 61%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div id="left">
+          <img
+            id="box"
+            src="./illustration-box-desktop.svg"
+            alt="Illustration of woman using computer"
+          />
+        </div>
+        <div id="right">
+          <div id="quest-container">
+            <p class="faq-text">FAQ</p>
+            <div id="members-q">
+              <p class="quest-text" aria-label="click to open">
+                How many team members can I invite?
+              </p>
+              <img src="./icon-arrow-down.svg" alt="open" class="arrow" />
+            </div>
+            <div id="members-a" class="showHide">
+              <p class="answer-text">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+            <hr class="hr" />
+            <div id="upload-q">
+              <p class="quest-text" aria-label="click to open">
+                What is the maximum file upload size?
+              </p>
+              <img src="./icon-arrow-down.svg" alt="open" class="arrow" />
+            </div>
+            <div id="upload-a" class="showHide">
+              <p class="answer-text">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+            <hr class="hr" />
+            <div id="password-q">
+              <p class="quest-text" aria-label="click to open">
+                How do I reset my password?
+              </p>
+              <img src="./icon-arrow-down.svg" alt="open" class="arrow" />
+            </div>
+            <div id="password-a" class="showHide">
+              <p class="answer-text">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+            <hr class="hr" />
+            <div id="subscript-q">
+              <p class="quest-text" aria-label="click to open">
+                Can I cancel my subscription?
+              </p>
+              <img src="./icon-arrow-down.svg" alt="open" class="arrow" />
+            </div>
+            <div id="subscript-a" class="showHide">
+              <p class="answer-text">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+            <hr class="hr" />
+            <div id="support-q">
+              <p class="quest-text" aria-label="click to open">
+                Do you provide additional support?
+              </p>
+              <img src="./icon-arrow-down.svg" alt="open" class="arrow" />
+            </div>
+            <div id="support-a" class="showHide">
+              <p class="answer-text">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+            <hr class="hr" />
+
+            <p></p>
+          </div>
+          <img
+            id="mo-woman"
+            src="./illustration-woman-online-mobile.svg"
+            alt="Illustration of woman online"
+          />
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/palgramming"
+        target="_blank"
+        >Palgramming</a
+      >.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
