@@ -1,0 +1,379 @@
+@font-face {
+  font-family: display;
+  src: url(./Open24DisplaySt.ttf);
+}
+
+:root {
+  --calc-body: #e6e6e6;
+  --total-back: #eeeeee;
+  --num-color: #36362c;
+  --num-butt: #e5e4e1;
+  --num-butt-hov: #ffffff;
+  --num-shad: #a79e91;
+  --num-back: #d2cdcd;
+  --equals-txt: #ffffff;
+  --equals-select: #c85402;
+  --equals-hov: #ff8a38;
+  --equals-shad: #873901;
+  --resdel: #378187;
+  --resdel-txt: #ffffff;
+  --resdel-shad: #1b6066;
+  --resdel-hov: #62b5bc;
+  --total: #36362c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--calc-body);
+  font-family: "Spartan", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 327px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--total);
+}
+
+#calculator {
+  width: 327px;
+  height: 667px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--num-color);
+  margin: 100px auto;
+}
+#total {
+  width: 327px;
+  height: 88px;
+  border-radius: 10px;
+  background-color: var(--total-back);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#total p {
+  color: var(--total);
+  font-family: display;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* CALCULATOR BUTTONS START */
+#calculator-buttons {
+  display: grid;
+  grid-template-areas:
+    "seven eight nine del"
+    "four five six plus"
+    "one two three minus"
+    "period myzero divide mytimes"
+    "reset reset equals equals";
+  width: 327px;
+  height: 420px;
+  background-color: var(--num-back);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px 5px;
+}
+
+.single {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+}
+
+.number {
+  font-size: 28px;
+  font-weight: 700;
+  background-color: var(--num-butt);
+  color: var(--num-color);
+  box-shadow: inset 0px -4px 0px 0px var(--num-shad);
+}
+
+.number p {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--num-color);
+}
+
+.single:hover {
+  background-color: var(--num-butt-hov);
+}
+
+.single:active {
+  background-color: var(--num-butt-hov);
+  box-shadow: none;
+  height: 56px;
+  padding-top: 4px;
+}
+
+.double {
+  width: 133px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#del {
+  grid-area: del;
+  background-color: var(--resdel);
+  box-shadow: inset 0px -4px 0px 0px var(--resdel-shad);
+  color: var(--resdel-txt);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.27px;
+}
+
+#del:hover {
+  background-color: var(--resdel-hov);
+}
+
+#del:active {
+  height: 56px;
+  box-shadow: none;
+  padding-top: 4px;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#plus {
+  grid-area: plus;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#minus {
+  grid-area: minus;
+}
+
+#period {
+  grid-area: period;
+}
+
+#zero {
+  grid-area: myzero;
+}
+
+#divide {
+  grid-area: divide;
+}
+#times {
+  grid-area: mytimes;
+}
+
+#reset {
+  grid-area: reset;
+  background-color: var(--resdel);
+  box-shadow: inset 0px -4px 0px 0px var(--resdel-shad);
+  color: var(--resdel-txt);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.27px;
+}
+
+#reset:hover {
+  background-color: var(--resdel-hov);
+}
+
+#reset:active {
+  background-color: var(--resdel-hov);
+  height: 56px;
+  box-shadow: none;
+  padding-top: 4px;
+}
+
+#equals {
+  grid-area: equals;
+  background-color: var(--equals-select);
+  box-shadow: inset 0px -4px 0px 0px var(--equals-shad);
+}
+#equals p {
+  color: var(--equals-txt);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.27px;
+  margin-top: 25px;
+}
+#equals:hover {
+  background-color: var(--equals-hov);
+}
+
+#equals:active {
+  background-color: var(--equals-hov);
+  height: 56px;
+  box-shadow: none;
+  padding-top: 4px;
+}
+
+/* END CALCULATOR BUTTONS */
+
+/* START SELECTOR */
+#form {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+input {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+#med-slider:hover,
+#dark-slider:hover {
+  cursor: pointer;
+}
+
+#slider {
+  position: relative;
+
+  width: 71px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: var(--num-back);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dot {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: var(--equals-select);
+  margin: 0 5px 0 5px;
+}
+#right-bottom {
+  display: flex;
+  align-items: center;
+}
+#right-top {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+#right-top button {
+  border: none;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  margin-right: 6px;
+}
+#right-top svg {
+  width: 16px;
+  border: none;
+  color: var(--total);
+}
+#right-bottom p {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--total);
+  margin-right: 10px;
+}
+
+/* END SELECTOR */
+
+@media screen and (min-width: 600px) {
+  #calculator {
+    width: 540px;
+  }
+  header {
+    width: 540px;
+  }
+
+  #total {
+    width: 540px;
+    height: 128px;
+  }
+  #total p {
+    font-size: 100px;
+    letter-spacing: 5px;
+  }
+
+  /* #total p {
+    font-size: 80px;
+    letter-spacing: -0.8px;
+  } */
+
+  #calculator-buttons {
+    width: 540px;
+    height: 708px;
+  }
+
+  #calculator-buttons {
+    width: 540px;
+    height: 480px;
+    gap: 25px;
+  }
+
+  .single {
+    width: 101px;
+    border-radius: 10px;
+  }
+  .double {
+    width: 202px;
+    border-radius: 10px;
+  }
+  .double:nth-child(1) {
+    margin-right: 50px;
+  }
+}
