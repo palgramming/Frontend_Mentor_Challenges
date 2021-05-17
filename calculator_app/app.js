@@ -127,54 +127,192 @@ const result = document.getElementById("result")
 
 
 let setEqual = false;
-let calcInput = []
-let holder = ""
-function calculate(x) {
-    if (setEqual == true && (x == "+" || x == "-" || x == "*" || x == "/")) {
-        calcInput.push(result.innerHTML) 
-        setEqual = false;
-    }
-    console.log("CalcInput",calcInput)  
-     console.log("holder", holder)  
-         
-    if (holder.length == 0 && x == "-" || x == "+") { 
-        if (x == "-") {
-            holder == "-"
-        }
-        
-    }
+let last = "";
+let multipleSave = "";
+let saveholder ="";
+let calcInput = [];
+let holder = "";
 
-   if ((x >= 0 && x <=9 )|| x == ".") {
-       holder += x
-       result.innerHTML = holder;
-   } else {
-      if (holder.length > 0) {
-          calcInput.push(holder);
-      } 
-      
-      holder = ""
-   
-    if (x == "=") {
-        setEqual = true
-        result.innerHTML = eval(calcInput.join(""));
-        calcInput = [];
-    } else if (x == "R"){
-        result.innerHTML = "reset"
-        calcInput = [];
-    } else if (x == "D") {
-        calcInput.pop()
-        let show = [...calcInput]
-        result.innerHTML = show
+function calculate(x) {
+    if (result.innerHTML == "TOO LARGE") {
+        x = "R"
+    } 
+    if ((last == "." && x == ".")||
+         (last == "*" && x == "*")||
+         (last == "=" && x == "=")||
+         (last == "/" && x == "/")||
+         (last == "+" && x == "+")||
+         (last == "-" && x == "-")) {
+             if (last == "=" && x == "=") {
+                 console.log("multipleSave",multipleSave)
+                 console.log("wierdThing", multipleSave[multipleSave.length -2])
+                 console.log("result", result.innerHTML)
+                 console.log("saveHolder", saveholder)
+                 calcInput = [result.innerHTML]
+                 calcInput.push(multipleSave[multipleSave.length -2])
+                 calcInput.push(saveholder)
+                 let mydoubler = eval(calcInput.join(""))
+                 console.log(mydoubler.toString().length)
+                 if ((mydoubler.toString().length) > 10) {
+                     result.innerHTML = "TOO LARGE"
+                 } else {
+                     result.innerHTML = mydoubler;
+                 }
+                 
+                 
+             }
+
+        }else {
+            last = x;
+            saveholder = ""
+  
+            if (setEqual == true && (x == "+" || x == "-" || x == "*" || x == "/")) {
+                    holder= result.innerHTML
+                
+                    setEqual = false;
+                    
+                }
+                console.log("CalcInput",calcInput)  
+                console.log("holder", holder)  
+                    
+                if (holder.length == 0 && (x == "-" || x == "+")) { 
+                    if (x == "-") {
+                        holder = "-"
+                    }
+                    
+                }
+
+            if ((x >= 0 && x <=9 )|| x == ".") {
+                
+                    holder += x
+                result.innerHTML = holder;
+                
+                
+            } else {
+                if (holder.length > 0) {
+                    saveholder = holder
+                    calcInput.push(holder);
+                } 
+                
+                holder = ""
+            
+                if (x == "=") {
+                    if (calcInput.length < 1) {
+                        result.innerHTML = 0
+                    } else  {
+                        setEqual = true
+                    multipleSave = calcInput
+                    let myresult = eval(calcInput.join(""))
+                    console.log(myresult.toString().length)
+                    if ((myresult.toString().length) > 10) {
+                     result.innerHTML = "TOO LARGE"
+                        } else {
+                     result.innerHTML = myresult;
+                    }
+                
+                    calcInput = [];
+                    }
+                    
+                } else if (x == "R"){
+                    result.innerHTML = 0
+                    calcInput = [];
+                    wierdthing = "";
+                    multipleSave = "";
+                } else if (x == "D") {
+                    calcInput.pop()
+                    let show = [...calcInput]
+                    result.innerHTML = show
+                
+                } else if (x == "-" || x == "+" || x == "/" || x == "*") {
+                    let compareVal = calcInput[calcInput.length - 1]
+                    if (compareVal = x) 
+                    calcInput.push(x)
+                }
+            }
+                console.log("CalcInput",calcInput)  
+                console.log("holder", holder) 
+            
+       }
     
-    } else if (x == "-" || x == "+" || x == "/" || x == "*") {
-        let compareVal = calcInput[calcInput.length - 1]
-        if (compareVal = x) 
-        calcInput.push(x)
-    }
-   }
-    console.log("CalcInput",calcInput)  
-     console.log("holder", holder) 
+   
 };
+
+
+window.addEventListener("keydown", function (event) {
+  if (event.defaultPrevented) {
+    return; // Do nothing if the event was already processed
+  }
+
+  switch (event.key) {
+    case "1":
+      calculate(1)
+      break;
+    case "2":
+      calculate(2)
+      break;
+    case "3":
+      calculate(3)
+      break;
+    case "4":
+      calculate(4)
+      break;
+    case "5":
+        calculate(5)
+        break;
+    case "6":
+        calculate(6)
+        break;
+    case "7":
+        calculate(7)
+        break;
+    case "8":
+      calculate(8)
+      break;
+    case "9":
+      calculate(9)
+      break;
+    case "0":
+      calculate(0)
+      break;
+    case "+":
+        calculate("+")
+        break;
+    case "=":
+      calculate("=")
+      break;
+    case "-":
+      calculate("-")
+      break;
+    case ".":
+      calculate(".")
+      break;
+     case "/":
+      calculate("/")
+      break;
+      case "*":
+      calculate("*")
+      break;
+    case "d":
+    case "D":
+      calculate("D")
+      break;
+    case "R":
+    case "r":
+      calculate("R")
+      break;
+    case "Enter":
+    case "":
+    case "=":
+      calculate("=")
+      break;
+    default:
+    console.log(event.key)
+      return; // Quit when this doesn't handle the key event.
+  }
+event.preventDefault();
+}, true);
+
+
 
 one.addEventListener("click", (e)=> {
     calculate(1)
