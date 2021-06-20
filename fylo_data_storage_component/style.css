@@ -92,11 +92,12 @@ main {
   width: 193px;
   height: 14px;
   border-radius: 8px;
-  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   display: flex;
   justify-content: right;
   align-items: center;
   margin-left: 3px;
+  position: relative;
 }
 
 .dot {
@@ -105,7 +106,10 @@ main {
   background-color: var(--white);
   border-radius: 100%;
   margin-right: 2px;
+  position: absolute;
+  right: 0;
 }
+
 .gigs {
   font-size: 12px;
   font-weight: 700;
